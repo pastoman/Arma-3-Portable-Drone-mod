@@ -1,4 +1,3 @@
-# Portable Drone
 # Drone that fits inside backpack, so you no longer need to carry those big, unpractical backpacks.
 
 This mod contains BLUEFOR, OPFOR and INDEPENDENT versions of AR-2, AL-6 drones and Remote Designator.
