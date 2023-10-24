@@ -506,7 +506,7 @@ class CfgVehicles
 			minAngleY=-150;
 			maxAngleY=150;
 		};
-		class Viewoptics: ViewOptics
+		class ViewOptics: ViewOptics
 		{
 			initAngleX=0;
 			minAngleX=0;
@@ -4064,7 +4064,7 @@ class CfgVehicles
 				memoryPointGunnerOptics="eye";
 				gunnerOpticsModel="\A3\Weapons_F_beta\Binocular\lasermarker_optics";
 				turretInfoType="RscOptics_LaserDesignator";
-				class ViewOptics: viewOptics
+				class ViewOptics: ViewOptics
 				{
 					initAngleX=0;
 					minAngleX=-30;
@@ -4467,7 +4467,7 @@ class CfgVehicles
 				memoryPointGunnerOptics="eye";
 				gunnerOpticsModel="\A3\Weapons_F_Mark\Reticle\optics_laserDesignator_02.p3d";
 				turretInfoType="RscOptics_LaserDesignator_02";
-				class ViewOptics: viewOptics
+				class ViewOptics: ViewOptics
 				{
 					initAngleX=0;
 					minAngleX=-30;
