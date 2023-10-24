@@ -1,1 +1,1 @@
-#include "\DRNP_main\script_component.hpp"
+#include "..\script_component.hpp"
