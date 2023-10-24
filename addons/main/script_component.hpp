@@ -1,6 +1,6 @@
 #define COMPONENT main
 #define COMPONENT_BEAUTIFIED main
-#include script_mod.hpp
+#include "script_mod.hpp"
 
 
 // #define DEBUG_MODE_FULL
