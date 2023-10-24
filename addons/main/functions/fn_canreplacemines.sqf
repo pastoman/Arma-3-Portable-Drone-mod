@@ -1,5 +1,5 @@
 
-#include "\z\ace\addons\main\script_mod.hpp"
+//#include "\z\ace\addons\main\script_mod.hpp"
 #include "\z\ace\addons\main\script_macros.hpp"
 params ["_dron", "_unit"];
 private _condition1 = !(isEngineOn _target) && alive _target;
