@@ -1,7 +1,6 @@
 
 
-#include "\z\ace\addons\main\script_mod.hpp"
-#include "\z\ace\addons\main\script_macros.hpp"
+#include "script_component.hpp"
 
 #define POS_X_BASE(size) safezoneX + 0.5 * safezoneW - 0.5 * (size) / (getResolution select 5)
 #define POS_Y_BASE(size) safezoneY + 0.5 * safezoneH - 0.5 * (size) / (getResolution select 5) * 4/3
@@ -50,7 +49,7 @@ private _uspech = {
 	private _dron;
 	switch (_condition) do {
 	case WEST: {
-		_dron = "DRNP_AL6" createVehicle [0, 0, 0];
+		_dron = "DRNP_AL6_Antimine" createVehicle [0, 0, 0];
 		createVehicleCrew _dron;
     _dron setDir _direction;
     _dron setPosASL _position;
@@ -99,9 +98,10 @@ private _uspech = {
 	(_this select 0) params ["_unit", "_dronItem"];
     _unit reveal _dron;
 	clearItemCargo _dron;
-		};
+	_dron setAmmoOnPylon ["pylons1", 0];
+	};
 	case EAST: {
-		_dron = "DRNP_AL6_O" createVehicle [0, 0, 0];
+		_dron = "DRNP_AL6_Antimine_O" createVehicle [0, 0, 0];
 		createVehicleCrew _dron;
     _dron setDir _direction;
     _dron setPosASL _position;
@@ -150,9 +150,10 @@ private _uspech = {
 	(_this select 0) params ["_unit", "_dronItem"];
     _unit reveal _dron;
 	clearItemCargo _dron;
+	_dron setAmmoOnPylon ["pylons1", 0];
 		};
 	default {
-		_dron = "DRNP_AL6_I" createVehicle [0, 0, 0];
+		_dron = "DRNP_AL6_Antimine_I" createVehicle [0, 0, 0];
 		createVehicleCrew _dron;
     _dron setDir _direction;
     _dron setPosASL _position;
@@ -200,8 +201,9 @@ private _uspech = {
 	// finishing placement
 	(_this select 0) params ["_unit", "_dronItem"];
 	clearItemCargo _dron;
+	_dron setAmmoOnPylon ["pylons1", 0];
     _unit reveal _dron;
-		};
+	};
 	};
 	};
 

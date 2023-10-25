@@ -1,0 +1,14 @@
+name = "Portable drone"
+mainprefix = "z"
+prefix = "DRNP"
+author = "Pastoman1"
+
+[files]
+include = [
+	"mod.cpp",
+	"meta.cpp",
+	"README.md",
+]
+
+[version]
+git_hash = 0
