@@ -1,1 +1,0 @@
-#include "\DRNP_main\script_component.hpp"

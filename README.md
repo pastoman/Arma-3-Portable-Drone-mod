@@ -17,3 +17,6 @@ If you want to check the battery status, which is inside the drone, you need to 
 AL-6 Drones come in 3 variants. first two differ with skin and third EOD variant comes with mine detector with range of 15m and 4 mine disposal charges, which you can use to clear minefields.
 With EOD disposal variant comes with new item: Drone EOD charges . You need to have this item in your inventory in order to rearm EOD AL-6 with mine disposal charges.
 AL-6 EOD is placed without ammo, so you need to rearm it first through ACE menu.
+
+# How to Build
+This mod uses the HEMTT Build System, using it requires [installing HEMTT](https://brettmayson.github.io/HEMTT/installation.html), afterwards you can run `build.bat` to create a test build.

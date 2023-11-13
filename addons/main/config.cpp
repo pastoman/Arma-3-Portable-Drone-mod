@@ -2,7 +2,7 @@ class cfgPatches
 
 {
 
-  class DRNP_main
+  class main
 
   {
 
@@ -39,11 +39,11 @@ class CfgMods
 
   {
 
-logo = "\DRNP_main\DRNP\addons\main\Data\UI\DRNP_logo.paa";          //Logo displayed in bottom left of main menu
+logo = "\z\DRNP\addons\main\Data\UI\DRNP_logo.paa";          //Logo displayed in bottom left of main menu
 
-logoOver = "\DRNP_main\DRNP\addons\main\Data\UI\DRNP_logo.paa"; //Logo displayed in the mod menu when mod icon is clicked
+logoOver = "\z\DRNP\addons\main\Data\UI\DRNP_logo.paa"; //Logo displayed in the mod menu when mod icon is clicked
 
-logoSmall = "\DRNP_main\DRNP\addons\main\Data\UI\DRNP_logo.paa";     //Logo displayed next to all units and vehicles in the editor
+logoSmall = "\z\DRNP\addons\main\Data\UI\DRNP_logo.paa";     //Logo displayed next to all units and vehicles in the editor
 
 dlcColor[] = {0,0,0,1}; 
 
@@ -96,7 +96,7 @@ class CfgFunctions
 	{
 		class DRNP_functions
 		{
-			file="\DRNP_main\DRNP\addons\main\functions";
+			file="\z\DRNP\addons\main\functions";
 			class place
 			{
 			};
@@ -145,7 +145,7 @@ class CfgMagazines
 	class CA_Magazine;
 	class DRNP_AR2_battery: CA_Magazine
 	{
-		picture="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+		picture="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 		author="Pastoman1";
 		scope=2;
 		displayName="Portable drone battery";
@@ -168,7 +168,7 @@ class CfgVehicles
 					condition="[_player,'DRNP_AR2P'] call ace_common_fnc_hasItem";
 					statement="[_player,'DRNP_AR2P'] call DRNP_fnc_place";
 					showDisabled=0;
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_dron.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_dron.paa";
 				};
 				class ace_dron_place_AL6
 				{
@@ -176,7 +176,7 @@ class CfgVehicles
 					condition="[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement="[_player,'DRNP_AL6P'] call DRNP_fnc_place_al6";
 					showDisabled=0;
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class ace_dron_place_AL6_med
 				{
@@ -184,7 +184,7 @@ class CfgVehicles
 					condition="[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement="[_player,'DRNP_AL6P'] call DRNP_fnc_place_al6_med";
 					showDisabled=0;
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class ace_dron_place_AL6_mine
 				{
@@ -192,7 +192,7 @@ class CfgVehicles
 					condition="[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement="[_player,'DRNP_AL6P'] call DRNP_fnc_place_al6_mine";
 					showDisabled=0;
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class ace_dron_place_RD
 				{
@@ -200,7 +200,7 @@ class CfgVehicles
 					condition="[_player,'DRNP_RD'] call ace_common_fnc_hasItem";
 					statement="[_player,'DRNP_RD'] call DRNP_fnc_place_RD";
 					showDisabled=0;
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_rd.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_rd.paa";
 				};
 			};
 		};
@@ -506,7 +506,7 @@ class CfgVehicles
 			minAngleY=-150;
 			maxAngleY=150;
 		};
-		class Viewoptics: ViewOptics
+		class ViewOptics: ViewOptics
 		{
 			initAngleX=0;
 			minAngleX=0;
@@ -973,7 +973,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -984,7 +984,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_ReplaceCharge
 				{
@@ -995,7 +995,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacemines";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Charge.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Charge.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -1006,7 +1006,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -1264,7 +1264,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -1275,7 +1275,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_ReplaceCharge
 				{
@@ -1286,7 +1286,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacemines";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Charge.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Charge.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -1297,7 +1297,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -1554,7 +1554,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -1565,7 +1565,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_ReplaceCharge
 				{
@@ -1576,7 +1576,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacemines";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Charge.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Charge.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -1587,7 +1587,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -1844,7 +1844,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -1855,7 +1855,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -1866,7 +1866,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -2122,7 +2122,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -2133,7 +2133,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -2144,7 +2144,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -2400,7 +2400,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -2411,7 +2411,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -2422,7 +2422,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -2678,7 +2678,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -2689,7 +2689,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -2700,7 +2700,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -2954,7 +2954,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -2965,7 +2965,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -2976,7 +2976,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -3230,7 +3230,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_al6";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -3241,7 +3241,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -3252,7 +3252,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -3421,7 +3421,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_dron.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_dron.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -3432,7 +3432,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -3443,7 +3443,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -3619,7 +3619,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_dron.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_dron.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -3630,7 +3630,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -3641,7 +3641,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -3817,7 +3817,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_dron.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_dron.paa";
 				};
 				class DRNP_ReplaceBattery
 				{
@@ -3828,7 +3828,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_replacebat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_Batt.paa";
 				};
 				class DRNP_CheckBattery
 				{
@@ -3839,7 +3839,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_checkbat";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
 				};
 			};
 		};
@@ -3882,7 +3882,7 @@ class CfgVehicles
 		vehicleClass="Items";
 		editorCategory="EdCat_Equipment";
 		editorSubcategory="EdSubcat_InventoryItems";
-		editorPreview="\DRNP_main\UI\icon_dron.paa";
+		editorPreview="\main\UI\icon_dron.paa";
 		class TransportItems
 		{
 			class _xx_ace_Dron
@@ -3901,7 +3901,7 @@ class CfgVehicles
 		vehicleClass="Items";
 		editorCategory="EdCat_Equipment";
 		editorSubcategory="EdSubcat_InventoryItems";
-		editorPreview="\DRNP_main\UI\icon_AL6.paa";
+		editorPreview="\main\UI\icon_AL6.paa";
 		class TransportItems
 		{
 			class _xx_ace_Dron
@@ -4064,7 +4064,7 @@ class CfgVehicles
 				memoryPointGunnerOptics="eye";
 				gunnerOpticsModel="\A3\Weapons_F_beta\Binocular\lasermarker_optics";
 				turretInfoType="RscOptics_LaserDesignator";
-				class ViewOptics: viewOptics
+				class ViewOptics: ViewOptics
 				{
 					initAngleX=0;
 					minAngleX=-30;
@@ -4235,7 +4235,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_RD";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_rd.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_rd.paa";
 				};
 			};
 		};
@@ -4349,7 +4349,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_RD";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_rd.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_rd.paa";
 				};
 			};
 		};
@@ -4467,7 +4467,7 @@ class CfgVehicles
 				memoryPointGunnerOptics="eye";
 				gunnerOpticsModel="\A3\Weapons_F_Mark\Reticle\optics_laserDesignator_02.p3d";
 				turretInfoType="RscOptics_LaserDesignator_02";
-				class ViewOptics: viewOptics
+				class ViewOptics: ViewOptics
 				{
 					initAngleX=0;
 					minAngleX=-30;
@@ -4640,7 +4640,7 @@ class CfgVehicles
 					statement="[_target,_player] call DRNP_fnc_pickup_RD";
 					showDisabled=0;
 					exceptions[]={};
-					icon="\DRNP_main\DRNP\addons\main\UI\Icon_rd.paa";
+					icon="\z\DRNP\addons\main\UI\Icon_rd.paa";
 				};
 			};
 		};
@@ -4671,7 +4671,7 @@ class CfgWeapons
 		scope=2;
 		displayName="AR-2 (Portable)";
 		descriptionShort="UAV";
-		picture="\DRNP_main\DRNP\addons\main\UI\icon_dron.paa";
+		picture="\z\DRNP\addons\main\UI\icon_dron.paa";
 		magazines[]=
 		{	
 			"DRNP_AR2_battery"
@@ -4689,7 +4689,7 @@ class CfgWeapons
 		scope=2;
 		displayName="AL-6 (Portable)";
 		descriptionShort="UAV";
-		picture="\DRNP_main\DRNP\addons\main\UI\Icon_AL6.paa";
+		picture="\z\DRNP\addons\main\UI\Icon_AL6.paa";
 		magazines[]=
 		{
 			"DRNP_AR2_battery"
@@ -4707,7 +4707,7 @@ class CfgWeapons
 		scope=2;
 		displayName="Remote Designator (Portable)";
 		descriptionShort="RD";
-		picture="\DRNP_main\DRNP\addons\main\UI\Icon_rd.paa";
+		picture="\z\DRNP\addons\main\UI\Icon_rd.paa";
 		magazines[]=
 		{
 			"DRNP_AR2_battery"
@@ -4726,7 +4726,7 @@ class CfgWeapons
 		scope=2;
 		displayName="Drone EOD charges";
 		descriptionShort="EOD charges";
-		picture="\DRNP_main\DRNP\addons\main\UI\Icon_Charge.paa";
+		picture="\z\DRNP\addons\main\UI\Icon_Charge.paa";
 		model="\A3\Weapons_F\Items\Toolkit";
 		class ItemInfo: CBA_MiscItem_ItemInfo
 		{

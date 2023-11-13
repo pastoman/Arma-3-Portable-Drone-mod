@@ -1,6 +1,5 @@
 
-#include "\z\ace\addons\main\script_mod.hpp"
-#include "\z\ace\addons\main\script_macros.hpp"
+#include "script_component.hpp"
 params ["_dron", "_unit"];
 
 if ((_unit call CBA_fnc_getUnitAnim) select 0 == "stand") then {
@@ -14,5 +13,5 @@ private _uspech = {
 	Hint _Status;
 	};
 	
-[5, [_dron], _uspech, {Hint "Unable to check drone battery"}, "Checking battery"] call EFUNC(common,progressBar);
+[5, [_dron], _uspech, {Hint "Unable to check drone battery"}, "Checking battery"] call ace_common_fnc_progressBar;
 	
