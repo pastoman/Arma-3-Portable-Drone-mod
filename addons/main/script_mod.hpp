@@ -3,7 +3,7 @@
 #define MAINPREFIX z
 #define PREFIX DRNP
 
-#include "\z\DRNP\addons\DRNP_main\script_version.hpp"
+#include "\z\DRNP\addons\main\script_version.hpp"
 
 #define VERSION MAJOR.MINOR.PATCHLVL.BUILD
 #define VERSION_AR MAJOR,MINOR,PATCHLVL,BUILD
