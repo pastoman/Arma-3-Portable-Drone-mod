@@ -13,5 +13,5 @@ private _uspech = {
 	Hint _Status;
 	};
 	
-[5, [_dron], _uspech, {Hint "Unable to check drone battery"}, "Checking battery"] call EFUNC(common,progressBar);
+[5, [_dron], _uspech, {Hint "Unable to check drone battery"}, "Checking battery"] call ace_common_fnc_progressBar;
 	

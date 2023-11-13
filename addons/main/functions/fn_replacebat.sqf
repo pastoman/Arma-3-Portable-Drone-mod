@@ -43,5 +43,5 @@ private _uspech = {
 	};
 };
 	
-[5, [_dron, _unit], _uspech, {Hint "Unable to replace drone battery"}, "Replacing battery"] call EFUNC(common,progressBar);
+[5, [_dron, _unit], _uspech, {Hint "Unable to replace drone battery"}, "Replacing battery"] call ace_common_fnc_progressBar;
 	

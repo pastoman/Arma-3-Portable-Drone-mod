@@ -11,5 +11,5 @@ private _uspech = {
 	_dron setAmmoOnPylon ["pylons1", 4];
 	_unit removeItem "DRNP_Drone_mines";
 	};
-[5, [_dron, _unit], _uspech, {Hint "Unable to replace charges"}, "Replacing charges"] call EFUNC(common,progressBar);
+[5, [_dron, _unit], _uspech, {Hint "Unable to replace charges"}, "Replacing charges"] call ace_common_fnc_progressBar;
 	
