@@ -90,4 +90,4 @@ private _uspech = {
 	};
 	};
 
-[5, [_unit, _dronItem], _uspech, {Hint "Unable to place drone"}, "Placing drone"] call EFUNC(common,progressBar);
+[5, [_unit, _dronItem], _uspech, {Hint "Unable to place drone"}, "Placing drone"] call ace_common_fnc_progressBar;

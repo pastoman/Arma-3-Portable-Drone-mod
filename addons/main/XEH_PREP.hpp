@@ -1,3 +1,14 @@
-PREP(ar2pickup);
-PREP(ar2place);
-PREP(ar2replacebat);
+PREP(canreplacebat);
+PREP(canreplacemines);
+PREP(checkbat);
+PREP(pickup);
+PREP(pickup_al6);
+PREP(pickup_EOD);
+PREP(pickup_RD);
+PREP(place);
+PREP(place_al6);
+PREP(place_al6_med);
+PREP(place_al6_mine);
+PREP(place_RD);
+PREP(replacebat);
+PREP(replacemines);
