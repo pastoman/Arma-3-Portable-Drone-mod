@@ -3651,7 +3651,7 @@ class CfgVehicles
 			{
 			};
 		};
-		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\O_UAV_01_F.jpg";
 		_generalMacro="DRNP_AR2_O";
 		scope=2;
 		scopeCurator=2;
@@ -3665,7 +3665,7 @@ class CfgVehicles
 		accuracy=0.5;
 		hiddenSelectionsTextures[]=
 		{
-			"A3\Drones_F\Air_F_Gamma\UAV_01\Data\UAV_01_CO.paa"
+			"A3\Drones_F\Air_F_Gamma\UAV_01\Data\UAV_01_OPFOR_CO.paa"
 		};
 		textureList[]=
 		{
@@ -3849,7 +3849,7 @@ class CfgVehicles
 			{
 			};
 		};
-		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\B_UAV_01_F.jpg";
+		editorPreview="\A3\EditorPreviews_F\Data\CfgVehicles\I_UAV_01_F.jpg";
 		_generalMacro="DRNP_AR2_I";
 		scope=2;
 		scopeCurator=2;
@@ -3863,7 +3863,7 @@ class CfgVehicles
 		accuracy=0.5;
 		hiddenSelectionsTextures[]=
 		{
-			"A3\Drones_F\Air_F_Gamma\UAV_01\Data\UAV_01_CO.paa"
+			"A3\Drones_F\Air_F_Gamma\UAV_01\Data\UAV_01_INDP_CO.paa"
 		};
 		textureList[]=
 		{
