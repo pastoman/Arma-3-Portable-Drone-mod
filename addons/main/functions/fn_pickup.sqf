@@ -12,11 +12,10 @@
 #define POS_W QUOTE(POS_W_BASE(SIZEX))
 #define POS_H QUOTE(POS_H_BASE(SIZEX))
 
-
 params ["_dron", "_unit"];
 
 if ((_unit call CBA_fnc_getUnitAnim) select 0 == "stand") then {
-    _unit playMove "Acts_TreatingWounded_loop";
+	_unit playMove "Acts_TreatingWounded_loop";
 };
 
 private _uspech = {
@@ -35,4 +34,3 @@ private _uspech = {
 };
 
 [5, [_dron, _unit], _uspech, {Hint "Unable to pick up drone"}, "Retrieving drone"] call ace_common_fnc_progressBar;
-
