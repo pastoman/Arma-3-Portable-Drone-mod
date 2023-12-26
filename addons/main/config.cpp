@@ -18,7 +18,6 @@ class CfgPatches {
 };
 
 class CfgMods {
-
 	class DRNP {
 		logo = "\z\DRNP\addons\main\Data\UI\DRNP_logo.paa"; //Logo displayed in bottom left of main menu
 		logoOver = "\z\DRNP\addons\main\Data\UI\DRNP_logo.paa"; //Logo displayed in the mod menu when mod icon is clicked
