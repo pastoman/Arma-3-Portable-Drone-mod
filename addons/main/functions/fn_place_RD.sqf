@@ -43,48 +43,28 @@ private _uspech = {
 	// placing drone
 	(_this select 0) params ["_unit", "_dronItem"];
 	private _condition = side _unit;
-	private _dron;
-	switch (_condition) do {
+	private _dron = switch (_condition) do {
 		case WEST: {
-			_dron = "DRNP_BLUEFOR_Static_Designator_01_F" createVehicle [0, 0, 0];
-			createVehicleCrew _dron;
-			_dron setDir _direction;
-			_dron setPosASL _position;
-			_dron setVectorUp _vectorUp;
-			[QEGVAR(common,fixPosition), _dron, _dron] call CBA_fnc_targetEvent;
-			[QEGVAR(common,fixFloating), _dron, _dron] call CBA_fnc_targetEvent;
-
-			// finishing placement
-			(_this select 0) params ["_unit", "_dronItem"];
-			_unit reveal _dron;
+			"DRNP_BLUEFOR_Static_Designator_01_F" createVehicle [0, 0, 0];
 		};
 		case EAST: {
-			_dron = "DRNP_OPFOR_Static_Designator_02_F" createVehicle [0, 0, 0];
-			createVehicleCrew _dron;
-			_dron setDir _direction;
-			_dron setPosASL _position;
-			_dron setVectorUp _vectorUp;
-			[QEGVAR(common,fixPosition), _dron, _dron] call CBA_fnc_targetEvent;
-			[QEGVAR(common,fixFloating), _dron, _dron] call CBA_fnc_targetEvent;
-
-			// finishing placement
-			(_this select 0) params ["_unit", "_dronItem"];
-			_unit reveal _dron;
+			"DRNP_OPFOR_Static_Designator_02_F" createVehicle [0, 0, 0];
 		};
 		default {
-			_dron = "DRNP_INDEP_Static_Designator_01_F" createVehicle [0, 0, 0];
-			createVehicleCrew _dron;
-			_dron setDir _direction;
-			_dron setPosASL _position;
-			_dron setVectorUp _vectorUp;
-			[QEGVAR(common,fixPosition), _dron, _dron] call CBA_fnc_targetEvent;
-			[QEGVAR(common,fixFloating), _dron, _dron] call CBA_fnc_targetEvent;
-
-			// finishing placement
-			(_this select 0) params ["_unit", "_dronItem"];
-			_unit reveal _dron;
+			"DRNP_INDEP_Static_Designator_01_F" createVehicle [0, 0, 0];
 		};
 	};
+
+	createVehicleCrew _dron;
+	_dron setDir _direction;
+	_dron setPosASL _position;
+	_dron setVectorUp _vectorUp;
+	[QEGVAR(common,fixPosition), _dron, _dron] call CBA_fnc_targetEvent;
+	[QEGVAR(common,fixFloating), _dron, _dron] call CBA_fnc_targetEvent;
+
+	// finishing placement
+	(_this select 0) params ["_unit", "_dronItem"];
+	_unit reveal _dron;
 };
 
 [5, [_unit, _dronItem], _uspech, {Hint "Unable to place drone"}, "Placing drone"] call ace_common_fnc_progressBar;
