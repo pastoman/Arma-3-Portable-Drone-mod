@@ -55,7 +55,6 @@ private _uspech = {
 		};
 	};
 
-	systemChat format ["finished switch, _dron: %1", _dron];
 	createVehicleCrew _dron;
 	_dron setDir _direction;
 	_dron setPosASL _position;
