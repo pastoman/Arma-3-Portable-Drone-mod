@@ -41,7 +41,6 @@ private _uspech = {
 	};
 
 	// placing drone
-	(_this select 0) params ["_unit", "_dronItem"];
 	private _condition = side _unit;
 	private _dron = switch (_condition) do {
 		case WEST: {
@@ -63,7 +62,6 @@ private _uspech = {
 	[QEGVAR(common,fixFloating), _dron, _dron] call CBA_fnc_targetEvent;
 
 	// setting drone fuel
-	(_this select 0) params ["_unit", "_dronItem"];
 	private _magazinesAmmo = magazinesAmmo _unit;
 	private _sizeofarray = count _magazinesAmmo;
 	private _droneammo = 0;
@@ -81,24 +79,20 @@ private _uspech = {
 	_pp = _pp - 1;
 	_totalammo sort false;
 	private _batterystatus = (_totalammo select 0) / 100;
-	(_this select 0) params ["_unit", "_dronItem"];
 	_dron setFuel _batterystatus;
 
 	// managing player inventory
-	(_this select 0) params ["_unit", "_dronItem"];
 	_unit removeMagazines "DRNP_AR2_battery";
 	_zostatok = [];
 
 	if (_pp > 0) then {
 		for "_i" from 1 to _pp step 1 do {
 			_zostatok = _totalammo select _i;
-			(_this select 0) params ["_unit", "_dronItem"];
 			_unit addMagazine ["DRNP_AR2_battery", _zostatok];
 		};
 	};
 
 	// finishing placement
-	(_this select 0) params ["_unit", "_dronItem"];
 	_unit reveal _dron;
 };
 

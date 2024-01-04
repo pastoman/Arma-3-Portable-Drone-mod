@@ -23,7 +23,6 @@ private _uspech = {
 	(_this select 0) params ["_dron", "_unit"];
 	[_unit, "DRNP_RD"] call ace_common_fnc_addToInventory;
 	// removing drone
-	(_this select 0) params ["_dron", "_unit"];
 	deleteVehicle _dron;
 };
 

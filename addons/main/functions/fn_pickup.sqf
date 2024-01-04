@@ -23,13 +23,10 @@ private _uspech = {
 	(_this select 0) params ["_dron", "_unit"];
 	[_unit, "DRNP_AR2P"] call ace_common_fnc_addToInventory;
 	// getting drone fuel status
-	(_this select 0) params ["_dron", "_unit"];
 	private _fuelstatus = round ((fuel _dron) * 100);
 	// removing drone
-	(_this select 0) params ["_dron", "_unit"];
 	deleteVehicle _dron;
 	// adding battery to inventory with drone fuel status
-	(_this select 0) params ["_dron", "_unit"];
 	[_unit, "DRNP_AR2_battery", "", _fuelstatus] call ace_common_fnc_addToInventory;
 };
 

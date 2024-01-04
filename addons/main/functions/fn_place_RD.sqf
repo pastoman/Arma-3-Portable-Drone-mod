@@ -41,7 +41,6 @@ private _uspech = {
 	};
 
 	// placing drone
-	(_this select 0) params ["_unit", "_dronItem"];
 	private _condition = side _unit;
 	private _dron = switch (_condition) do {
 		case WEST: {
@@ -63,7 +62,6 @@ private _uspech = {
 	[QEGVAR(common,fixFloating), _dron, _dron] call CBA_fnc_targetEvent;
 
 	// finishing placement
-	(_this select 0) params ["_unit", "_dronItem"];
 	_unit reveal _dron;
 };
 
