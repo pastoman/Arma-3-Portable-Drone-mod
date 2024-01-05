@@ -58,27 +58,6 @@ class Extended_Init_EventHandlers {
 	};
 };
 
-class CfgFunctions {
-	class DRNP {
-		class DRNP_functions {
-			file = "\z\DRNP\addons\main\functions";
-			class place {};
-			class pickup {};
-			class pickup_RD {};
-			class replacebat {};
-			class canreplacebat {};
-			class canreplacemines {};
-			class checkbat {};
-			class place_al6 {};
-			class place_al6_med {};
-			class place_al6_mine {};
-			class place_RD {};
-			class pickup_al6 {};
-			class replacemines {};
-		};
-	};
-};
-
 class CBA_Extended_EventHandlers_base;
 class CfgMagazines {	
 	class CA_Magazine;
