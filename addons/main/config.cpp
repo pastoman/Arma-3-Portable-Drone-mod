@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 class CfgPatches {
 	class main {
 		author = "Pastoman1"; 
