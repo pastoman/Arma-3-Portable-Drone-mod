@@ -6,35 +6,35 @@ class CfgVehicles {
 				class ace_dron_place_AR2 {
 					displayName = "Place AR-2 drone";
 					condition = "[_player,'DRNP_AR2P'] call ace_common_fnc_hasItem";
-					statement = "[_player,'DRNP_AR2P'] call DRNP_fnc_place";
+					statement = QUOTE([ARR_2(_player,'DRNP_AR2P')] call FUNC(place));
 					showDisabled = 0;
 					icon = "\z\DRNP\addons\main\UI\Icon_dron.paa";
 				};
 				class ace_dron_place_AL6 {
 					displayName = "Place AL-6 drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
-					statement = "[_player,'DRNP_AL6P'] call DRNP_fnc_place_al6";
+					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6));
 					showDisabled = 0;
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class ace_dron_place_AL6_med {
 					displayName = "Place AL-6 Medical drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
-					statement = "[_player,'DRNP_AL6P'] call DRNP_fnc_place_al6_med";
+					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6_med));
 					showDisabled = 0;
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class ace_dron_place_AL6_mine {
 					displayName = "Place AL-6 EOD drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
-					statement = "[_player,'DRNP_AL6P'] call DRNP_fnc_place_al6_mine";
+					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6_mine));
 					showDisabled = 0;
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
 				};
 				class ace_dron_place_RD {
 					displayName = "Place remote designator";
 					condition = "[_player,'DRNP_RD'] call ace_common_fnc_hasItem";
-					statement = "[_player,'DRNP_RD'] call DRNP_fnc_place_RD";
+					statement = QUOTE([ARR_2(_player,'DRNP_RD')] call FUNC(place_RD));
 					showDisabled = 0;
 					icon = "\z\DRNP\addons\main\UI\Icon_rd.paa";
 				};
@@ -556,7 +556,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -565,8 +565,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -575,8 +575,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace EOD charges";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacemines";
-					statement = "[_target,_player] call DRNP_fnc_replacemines";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacemines));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacemines));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Charge.paa";
@@ -586,7 +586,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -681,7 +681,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -690,8 +690,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -700,8 +700,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace EOD charges";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacemines";
-					statement = "[_target,_player] call DRNP_fnc_replacemines";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacemines));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacemines));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Charge.paa";
@@ -711,7 +711,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -805,7 +805,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -814,8 +814,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -824,8 +824,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace EOD charges";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacemines";
-					statement = "[_target,_player] call DRNP_fnc_replacemines";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacemines));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacemines));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Charge.paa";
@@ -835,7 +835,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -929,7 +929,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -938,8 +938,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -949,7 +949,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -1042,7 +1042,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -1051,8 +1051,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -1062,7 +1062,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -1155,7 +1155,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -1164,8 +1164,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -1175,7 +1175,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -1268,7 +1268,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -1277,8 +1277,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -1288,7 +1288,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -1379,7 +1379,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -1388,8 +1388,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -1399,7 +1399,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -1490,7 +1490,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_al6";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
@@ -1499,8 +1499,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -1510,7 +1510,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -1585,7 +1585,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_dron.paa";
@@ -1594,8 +1594,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -1605,7 +1605,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -1682,7 +1682,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_dron.paa";
@@ -1691,8 +1691,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -1702,7 +1702,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -1779,7 +1779,7 @@ class CfgVehicles {
 					displayName = "Pickup drone";
 					distance = 5;
 					condition = "(alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_dron.paa";
@@ -1788,8 +1788,8 @@ class CfgVehicles {
 					selection = "";
 					displayName = "Replace battery";
 					distance = 5;
-					condition = "[_target,_player] call DRNP_fnc_canreplacebat";
-					statement = "[_target,_player] call DRNP_fnc_replacebat";
+					condition = QUOTE([ARR_2(_target,_player)] call FUNC(canreplacebat));
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
@@ -1799,7 +1799,7 @@ class CfgVehicles {
 					displayName = "Check battery";
 					distance = 5;
 					condition = "(!(isEngineOn _target) && alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_checkbat";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
@@ -2092,7 +2092,7 @@ class CfgVehicles {
 					displayName = "Pickup remote designator";
 					distance = 5;
 					condition = "(alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_RD";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_RD));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_rd.paa";
@@ -2149,7 +2149,7 @@ class CfgVehicles {
 					displayName = "Pickup remote designator";
 					distance = 5;
 					condition = "(alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_RD";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_RD));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_rd.paa";
@@ -2353,7 +2353,7 @@ class CfgVehicles {
 					displayName = "Pickup remote designator";
 					distance = 5;
 					condition = "(alive _target)";
-					statement = "[_target,_player] call DRNP_fnc_pickup_RD";
+					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_RD));
 					showDisabled = 0;
 					exceptions[] = {};
 					icon = "\z\DRNP\addons\main\UI\Icon_rd.paa";
