@@ -21,9 +21,9 @@ class CfgPatches {
 
 class CfgMods {
 	class DRNP {
-		logo = "\z\DRNP\addons\main\Data\UI\DRNP_logo.paa"; //Logo displayed in bottom left of main menu
-		logoOver = "\z\DRNP\addons\main\Data\UI\DRNP_logo.paa"; //Logo displayed in the mod menu when mod icon is clicked
-		logoSmall = "\z\DRNP\addons\main\Data\UI\DRNP_logo.paa"; //Logo displayed next to all units and vehicles in the editor
+		logo = QPATHTOF(Data\UI\DRNP_logo.paa); //Logo displayed in bottom left of main menu
+		logoOver = QPATHTOF(Data\UI\DRNP_logo.paa); //Logo displayed in the mod menu when mod icon is clicked
+		logoSmall = QPATHTOF(Data\UI\DRNP_logo.paa); //Logo displayed next to all units and vehicles in the editor
 		dlcColor[] = {0,0,0,1}; 
 		hideName = 0; 
 		hidePicture = 1; 

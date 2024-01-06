@@ -8,35 +8,35 @@ class CfgVehicles {
 					condition = "[_player,'DRNP_AR2P'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_AR2P')] call FUNC(place));
 					showDisabled = 0;
-					icon = "\z\DRNP\addons\main\UI\Icon_dron.paa";
+					icon = QPATHTOF(UI\Icon_dron.paa);
 				};
 				class ace_dron_place_AL6 {
 					displayName = "Place AL-6 drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6));
 					showDisabled = 0;
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class ace_dron_place_AL6_med {
 					displayName = "Place AL-6 Medical drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6_med));
 					showDisabled = 0;
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class ace_dron_place_AL6_mine {
 					displayName = "Place AL-6 EOD drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6_mine));
 					showDisabled = 0;
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class ace_dron_place_RD {
 					displayName = "Place remote designator";
 					condition = "[_player,'DRNP_RD'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_RD')] call FUNC(place_RD));
 					showDisabled = 0;
-					icon = "\z\DRNP\addons\main\UI\Icon_rd.paa";
+					icon = QPATHTOF(UI\Icon_rd.paa);
 				};
 			};
 		};
@@ -558,7 +558,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -568,7 +568,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_ReplaceCharge {
 					selection = "";
@@ -578,7 +578,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacemines));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Charge.paa";
+					icon = QPATHTOF(UI\Icon_Charge.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -588,7 +588,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -683,7 +683,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -693,7 +693,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_ReplaceCharge {
 					selection = "";
@@ -703,7 +703,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacemines));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Charge.paa";
+					icon = QPATHTOF(UI\Icon_Charge.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -713,7 +713,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -808,7 +808,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -818,7 +818,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_ReplaceCharge {
 					selection = "";
@@ -828,7 +828,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacemines));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Charge.paa";
+					icon = QPATHTOF(UI\Icon_Charge.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -838,7 +838,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -933,7 +933,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -943,7 +943,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -953,7 +953,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1046,7 +1046,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -1056,7 +1056,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -1066,7 +1066,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1159,7 +1159,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -1169,7 +1169,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -1179,7 +1179,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1272,7 +1272,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -1282,7 +1282,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -1292,7 +1292,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1383,7 +1383,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -1393,7 +1393,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -1403,7 +1403,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1494,7 +1494,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_al6));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -1504,7 +1504,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -1514,7 +1514,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1589,7 +1589,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_dron.paa";
+					icon = QPATHTOF(UI\Icon_dron.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -1599,7 +1599,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -1609,7 +1609,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1686,7 +1686,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_dron.paa";
+					icon = QPATHTOF(UI\Icon_dron.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -1696,7 +1696,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -1706,7 +1706,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1783,7 +1783,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_dron.paa";
+					icon = QPATHTOF(UI\Icon_dron.paa);
 				};
 				class DRNP_ReplaceBattery {
 					selection = "";
@@ -1793,7 +1793,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(replacebat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_Batt.paa";
+					icon = QPATHTOF(UI\Icon_Batt.paa);
 				};
 				class DRNP_CheckBattery {
 					selection = "";
@@ -1803,7 +1803,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(checkbat));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_CheckBatt.paa";
+					icon = QPATHTOF(UI\Icon_CheckBatt.paa);
 				};
 			};
 		};
@@ -1837,7 +1837,7 @@ class CfgVehicles {
 		vehicleClass = "Items";
 		editorCategory = "EdCat_Equipment";
 		editorSubcategory = "EdSubcat_InventoryItems";
-		editorPreview = "\main\UI\icon_dron.paa";
+		editorPreview = QPATHTOF(UI\icon_dron.paa);
 		class TransportItems {
 			class _xx_ace_Dron {
 				name = "DRNP_AR2";
@@ -1853,7 +1853,7 @@ class CfgVehicles {
 		vehicleClass = "Items";
 		editorCategory = "EdCat_Equipment";
 		editorSubcategory = "EdSubcat_InventoryItems";
-		editorPreview = "\main\UI\icon_AL6.paa";
+		editorPreview = QPATHTOF(UI\icon_AL6.paa);
 		class TransportItems {
 			class _xx_ace_Dron {
 				name = "DRNP_AL6";
@@ -2096,7 +2096,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_RD));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_rd.paa";
+					icon = QPATHTOF(UI\Icon_rd.paa);
 				};
 			};
 		};
@@ -2153,7 +2153,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_RD));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_rd.paa";
+					icon = QPATHTOF(UI\Icon_rd.paa);
 				};
 			};
 		};
@@ -2358,7 +2358,7 @@ class CfgVehicles {
 					statement = QUOTE([ARR_2(_target,_player)] call FUNC(pickup_RD));
 					showDisabled = 0;
 					exceptions[] = {};
-					icon = "\z\DRNP\addons\main\UI\Icon_rd.paa";
+					icon = QPATHTOF(UI\Icon_rd.paa);
 				};
 			};
 		};

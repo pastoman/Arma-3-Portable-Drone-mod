@@ -7,7 +7,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "AR-2 (Portable)";
 		descriptionShort = "UAV";
-		picture = "\z\DRNP\addons\main\UI\icon_dron.paa";
+		picture = QPATHTOF(UI\icon_dron.paa);
 		magazines[] = {
 			"DRNP_AR2_battery"
 		};
@@ -22,7 +22,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "AL-6 (Portable)";
 		descriptionShort = "UAV";
-		picture = "\z\DRNP\addons\main\UI\Icon_AL6.paa";
+		picture = QPATHTOF(UI\Icon_AL6.paa);
 		magazines[] = {
 			"DRNP_AR2_battery"
 		};
@@ -37,7 +37,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "Remote Designator (Portable)";
 		descriptionShort = "RD";
-		picture = "\z\DRNP\addons\main\UI\Icon_rd.paa";
+		picture = QPATHTOF(UI\Icon_rd.paa);
 		magazines[] = {
 			"DRNP_AR2_battery"
 		};
@@ -52,7 +52,7 @@ class CfgWeapons {
 		scope = 2;
 		displayName = "Drone EOD charges";
 		descriptionShort = "EOD charges";
-		picture = "\z\DRNP\addons\main\UI\Icon_Charge.paa";
+		picture = QPATHTOF(UI\Icon_Charge.paa);
 		model = "\A3\Weapons_F\Items\Toolkit";
 		class ItemInfo: CBA_MiscItem_ItemInfo {
 			mass = 60;
