@@ -8,7 +8,7 @@ class CfgWeapons {
 		displayName = "AR-2 (Portable)";
 		descriptionShort = "UAV";
 		picture = "\z\DRNP\addons\main\UI\icon_dron.paa";
-		magazines[] = {	
+		magazines[] = {
 			"DRNP_AR2_battery"
 		};
 		model = "\A3\Weapons_F\Items\Toolkit";
@@ -46,7 +46,6 @@ class CfgWeapons {
 			mass = 30;
 		};
 	};
-
 	class DRNP_Drone_mines: ACE_ItemCore {
 		author = "Pastoman1";
 		_generalMacro = "DRNP_Drone_mines";

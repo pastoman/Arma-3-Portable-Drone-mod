@@ -73,7 +73,6 @@ class CfgVehicles {
 		};
 		fuelCapacity = 200;
 	};
-
 	class UAV_06_base_F: Helicopter_Base_F {
 		class ACE_Actions: ACE_Actions {
 			class ACE_MainActions: ACE_MainActions {
@@ -484,12 +483,12 @@ class CfgVehicles {
 			};
 		};
 	};
+
 	class B_UAV_06_medical_F: UAV_06_base_F {
 	};
 	class UAV_06_antimine_base_F: UAV_06_base_F {
 		mineDetectorRange = 15;
 	};
-
 	class DRNP_AL6_Antimine: UAV_06_antimine_base_F {
 		author = "Pastoman1";
 		class SimpleObject {
@@ -739,6 +738,7 @@ class CfgVehicles {
 			"A3\Air_F_Orange\UAV_06\Data\O_UAV_06_CO.paa"
 		};
 	};
+
 	class DRNP_AL6_Antimine_I: UAV_06_antimine_base_F {
 		author = "Pastoman1";
 		class SimpleObject {
@@ -863,6 +863,7 @@ class CfgVehicles {
 			"A3\Air_F_Orange\UAV_06\Data\I_UAV_06_CO.paa"
 		};
 	};
+
 	class DRNP_AL6_MED: B_UAV_06_medical_F {
 		author = "Pastoman1";
 		class SimpleObject {
@@ -971,12 +972,12 @@ class CfgVehicles {
 		typicalCargo[] = {
 			"B_UAV_AI_F"
 		};
-
 		hiddenSelectionsTextures[] = {
 			"A3\Air_F_Orange\UAV_06\Data\B_UAV_06_medical_CO.paa",
 			"A3\Air_F_Orange\UAV_06\Data\B_UAV_06_medical_CO.paa"
 		};
 	};
+
 	class DRNP_AL6_MED_O: B_UAV_06_medical_F {
 		author = "Pastoman1";
 		class SimpleObject {
@@ -1084,12 +1085,12 @@ class CfgVehicles {
 		typicalCargo[] = {
 			"O_UAV_AI"
 		};
-
 		hiddenSelectionsTextures[] = {
 			"A3\Air_F_Orange\UAV_06\Data\O_UAV_06_medical_CO.paa",
 			"A3\Air_F_Orange\UAV_06\Data\O_UAV_06_medical_CO.paa"
 		};
 	};
+
 	class DRNP_AL6_MED_I: B_UAV_06_medical_F {
 		author = "Pastoman1";
 		class SimpleObject {
@@ -1197,12 +1198,12 @@ class CfgVehicles {
 		typicalCargo[] = {
 			"I_UAV_AI_F"
 		};
-
 		hiddenSelectionsTextures[] = {
 			"A3\Air_F_Orange\UAV_06\Data\I_UAV_06_medical_CO.paa",
 			"A3\Air_F_Orange\UAV_06\Data\I_UAV_06_medical_CO.paa"
 		};
 	};
+
 	class DRNP_AL6: UAV_06_base_F {
 		author = "Pastoman1";
 		class SimpleObject {
@@ -2314,6 +2315,7 @@ class CfgVehicles {
 			};
 		};
 	};
+
 	class DRNP_OPFOR_Static_Designator_02_F: Static_Designator_02_base_F {
 		author = "Pastoman1";
 		class SimpleObject {
