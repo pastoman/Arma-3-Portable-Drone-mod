@@ -59,7 +59,7 @@ class Extended_Init_EventHandlers {
 };
 
 class CBA_Extended_EventHandlers_base;
-
+#include "CfgEventHandlers.hpp"
 #include "CfgMagazines.hpp"
 #include "CfgVehicles.hpp"
 #include "CfgWeapons.hpp"
