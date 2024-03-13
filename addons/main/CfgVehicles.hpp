@@ -3,35 +3,35 @@ class CfgVehicles {
 	class CAManBase: Man {
 		class ACE_SelfActions {
 			class ACE_Equipment {
-				class ace_dron_place_AR2 {
+				class GVAR(place_AR2) {
 					displayName = "Place AR-2 drone";
 					condition = "[_player,'DRNP_AR2P'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_AR2P')] call FUNC(place));
 					showDisabled = 0;
 					icon = QPATHTOF(UI\Icon_dron.paa);
 				};
-				class ace_dron_place_AL6 {
+				class GVAR(place_AL6) {
 					displayName = "Place AL-6 drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6));
 					showDisabled = 0;
 					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
-				class ace_dron_place_AL6_med {
+				class GVAR(place_AL6_med) {
 					displayName = "Place AL-6 Medical drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6_med));
 					showDisabled = 0;
 					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
-				class ace_dron_place_AL6_mine {
+				class GVAR(place_AL6_mine) {
 					displayName = "Place AL-6 EOD drone";
 					condition = "[_player,'DRNP_AL6P'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_AL6P')] call FUNC(place_al6_mine));
 					showDisabled = 0;
 					icon = QPATHTOF(UI\Icon_AL6.paa);
 				};
-				class ace_dron_place_RD {
+				class GVAR(place_RD) {
 					displayName = "Place remote designator";
 					condition = "[_player,'DRNP_RD'] call ace_common_fnc_hasItem";
 					statement = QUOTE([ARR_2(_player,'DRNP_RD')] call FUNC(place_RD));
