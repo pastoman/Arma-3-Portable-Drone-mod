@@ -46,8 +46,8 @@ private _uspech = {
 	_dron setDir _direction;
 	_dron setPosASL _position;
 	_dron setVectorUp _vectorUp;
-	[QEGVAR(common,fixPosition), _dron, _dron] call CBA_fnc_targetEvent;
-	[QEGVAR(common,fixFloating), _dron, _dron] call CBA_fnc_targetEvent;
+	["ace_common_fixPosition", _dron, _dron] call CBA_fnc_targetEvent;
+	["ace_common_fixFloating", _dron, _dron] call CBA_fnc_targetEvent;
 
 	// setting drone fuel
 	private _magazinesAmmo = magazinesAmmo _unit;
